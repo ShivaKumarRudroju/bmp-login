@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+<style>
+  .banner-section {
+    background-image: url("https://cdn.shopify.com/s/files/1/0064/6515/9257/files/image_f16c2dea-136b-4580-a103-33683ecb419d.png?v=1734637732");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .layer-section {
+    background: #00000082;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+  }
+
+  .form-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  .input {
+    border-radius: 8px;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #404040;
+    width: 95%;
+    display: flex;
+    align-items: center;
+  }
+
+  .input input {
+    border: 0px;
+    padding: 20px;
+    width: 80%;
+  }
+
+  .heading {
+    color: #00b2ff;
+    font-family: "Roboto Condensed";
+    font-size: 87.766px;
+    font-style: italic;
+    font-weight: 900;
+    line-height: 94.518px;
+    /* 107.692% */
+    letter-spacing: -1.755px;
+    text-transform: uppercase;
+    margin: 0px;
+  }
+
+  .head2 {
+    color: #00b2ff;
+    font-family: "Roboto Condensed";
+    font-size: 45.76px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 49.28px;
+    /* 107.692% */
+    letter-spacing: -0.915px;
+    text-transform: uppercase;
+    margin: 0px;
+  }
+
+  .paragraph {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 21.12px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 1.478px;
+  }
+
+  .zero {
+    color: #ffa600;
+    font-family: "Roboto Condensed";
+    font-size: 84.48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 186.125px;
+    /* 220.318% */
+    letter-spacing: -1.69px;
+    text-transform: uppercase;
+  }
+
+  .percentage {
+    color: #fff;
+    font-family: "Roboto Condensed";
+    font-size: 21.12px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 186.125px;
+    /* 881.272% */
+    letter-spacing: -0.422px;
+  }
+
+  .pay-just {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 21.12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28.16px;
+    /* 133.333% */
+    letter-spacing: -0.422px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+  }
+
+  .form {
+    display: inline-flex;
+    padding: 27.472px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .radio-btn-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .submit-btn {
+    width: 100%;
+    padding: 13px;
+    background-color: #1d4ed8;
+    border: 0px;
+    color: #fff;
+    border-radius: 10px;
+  }
+
+  .body-section {
+    max-width: 1600px;
+    margin: auto;
+  }
+
+  .body-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10%;
+  }
+
+  .text-section {
+    display: flex;
+    width: 550px;
+    flex-direction: column;
+  }
+
+  .text-section h2 {
+    color: var(--Text-No-surface-Light-H1, #171717);
+
+    /* Heading/Desktop/H1/Medium/ */
+    font-family: var(--fontFamily-Nunito, Nunito);
+    font-size: var(--font-size-4, 40px);
+    font-style: normal;
+    font-weight: var(--fontWeight-medium, 500);
+    line-height: 48px;
+    /* 120% */
+    letter-spacing: -0.8px;
+  }
+
+  .text-section h4 {
+    color: var(--Text-No-surface-Light-H1, #171717);
+
+    /* Heading/Desktop/H5/Medium/ */
+    font-family: var(--fontFamily-Nunito, Nunito);
+    font-size: var(--font-size-6, 24px);
+    font-style: normal;
+    font-weight: var(--fontWeight-medium, 500);
+    line-height: 32px;
+    /* 133.333% */
+    letter-spacing: -0.48px;
+  }
+
+  .text-section p {
+    line-height: 45px;
+    font-weight: 200;
+    font-size: 25px;
+    text-align: left;
+  }
+
+  .sample-img img {
+    margin-bottom: 10px;
+  }
+
+  .contact-btn {
+    display: flex;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    border: 1px solid #000;
+    font-size: 20px;
+  }
+
+  .call-number {
+    color: #1d4ed8;
+  }
+
+  .date {
+    color: #b91c1c;
+  }
+
+  .text-section {
+    text-align: center;
+  }
+
+  .our-process-sec {
+    text-align: center;
+  }
+
+  .our-process-sec h2 {
+    color: #000;
+    text-align: center;
+
+    /* Heading/Desktop/H1/Bold */
+    font-family: var(--fontFamily-Nunito, Nunito);
+    font-size: var(--font-size-4, 40px);
+    font-style: normal;
+    font-weight: var(--fontWeight-bold, 700);
+    line-height: 48px;
+    /* 120% */
+    letter-spacing: -0.8px;
+  }
+
+  .our-process-sec p {
+    color: var(--Text-No-surface-Paragraph, #525252);
+    text-align: center;
+
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: var(--fontWeight-regular, 400);
+    line-height: 24px;
+    /* 150% */
+  }
+
+  .step-section {
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    gap: 16px;
+    flex: 1 0 0;
+    align-self: stretch;
+    align-items: center;
+    border-radius: 6px;
+    border: 1px solid var(--Border-Dark-Brand, #1d4ed8);
+    background: var(--Background-Neutral-Disable, #fafafa);
+  }
+
+  .step-section h3 {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+  }
+
+  .step-section p {
+    color: #525252;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    width: 80%;
+    text-align: left;
+  }
+
+  .step-section-2 p {
+    color: #525252;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+
+    text-align: left;
+  }
+
+  .step-section-text {
+    text-align: left;
+  }
+
+  .step-section-container {
+    display: flex;
+    gap: 40px;
+  }
+
+  .step-section-2 {
+    display: flex;
+    width: 100%;
+    gap: 16px;
+    align-items: center;
+    border-radius: 6px;
+    border: 1px solid var(--Border-Dark-Brand, #1d4ed8);
+    background: var(--Background-Neutral-Disable, #fafafa);
+    padding: 16px;
+    margin-top: 40px;
+  }
+
+  .step-section-text h3 {
+    font-size: 30px;
+  }
+
+  .meet-our-team-sec {
+    text-align: center;
+    padding-top: 10%;
+  }
+
+  .avatar-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 64px;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;
+    background-color: #f5f5f5;
+    border-radius: 50px;
+  }
+
+  .avatar img {
+    border-radius: 50%;
+  }
+
+  .meet-our-team-sec h2 {
+    color: #000;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: -0.8px;
+  }
+
+  .meet-our-team-sec p {
+    color: #525252;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+  }
+
+  .review-sec {
+    text-align: center;
+    padding-top: 10%;
+  }
+
+  .review-card {
+    width: fit-content;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.05);
+    padding: 16px;
+  }
+
+  .avatar-name {
+    display: flex;
+  }
+
+  .review-name p {
+    margin: 0px;
+    position: absolute;
+    top: 0px;
+    left: 20%;
+    line-height: 25px;
+  }
+
+  .review-name {
+    position: relative;
+  }
+
+  .review-stars img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+
+  .review-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+  }
+
+  .second-form-sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10%;
+  }
+
+  .form2 {
+    display: inline-flex;
+    padding: 27.472px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    background-color: white;
+    border-radius: 10px;
+    min-width: 500px;
+  }
+
+  .second-form-sec h2 {
+    font-size: 45px;
+  }
+
+  .second-form-sec p {
+    font-size: 30px;
+  }
+
+  .second-form-sec h4 {
+    font-size: 30px;
+  }
+
+  .form-right {
+    width: 45%;
+  }
+
+  .banner-section-2 {
+    background-color: #1D4ED8;
+    position: relative;
+    height: 500px;
+    color: white;
+  }
+
+  .tab-image {
+    position: absolute;
+    right: 0px;
+
+  }
+
+  .width-container {
+    max-width: 1600px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .container-text p {
+    font-size: 30px;
+    width: 50%;
+  }
+
+  .container-text h2 {
+    color: rgba(245, 0, 0, 1);
+    background: linear-gradient(90deg, #FFF 50.83%, #9AB5FF 65.52%, #1D4ED8 100%);
+    font-size: 45px;
+  }
+
+  .videocallbutton {
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.00);
+    background: #E21010;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    bottom: 30px;
+    padding: 16px;
+    color: white;
+    font-size: 30px;
+  }
+
+  .map-section {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: 5%;
+  }
+
+  @media (max-width:768px) {
+    .form-text-section {
+      text-align: center;
+    }
+
+    .heading {
+      color: #00b2ff;
+      font-family: "Roboto Condensed";
+      font-size: 40px;
+      font-style: italic;
+      font-weight: 900;
+      line-height: 94.518px;
+      letter-spacing: -1.755px;
+      text-transform: uppercase;
+      margin: 0px;
+    }
+
+    .form-section {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+    }
+
+    .body-main {
+      display: flex;
+
+      flex-direction: column;
+    }
+
+    .form {
+      gap: 10px;
+    }
+
+    .sample-img img {
+      width: 100%;
+    }
+
+    .text-section {
+      display: flex;
+      width: fit-content;
+      flex-direction: column;
+      /* padding-top: 70%; */
+    }
+
+    .qr img {
+      width: 100%;
+    }
+
+    .form-text-section h2 {
+      height: 135px;
+      margin: 0px;
+    }
+
+
+    .step-section-container {
+      flex-direction: column;
+    }
+
+    .meet-our-team-sec p {
+      font-size: 19px;
+      line-height: 40px;
+    }
+
+    .image-section {
+      padding-top: 30px;
+    }
+
+    .second-form-sec {
+      display: flex;
+      /* justify-content: space-between; */
+      align-items: center;
+      padding-top: 10%;
+      flex-direction: column;
+    }
+
+    .form-right {
+      width: 100%;
+    }
+
+    .review-container {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      overflow: scroll;
+    }
+
+    .review-container {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      overflow: scroll;
+    }
+
+    .avatar-section {
+      display: flex;
+      overflow: scroll;
+    }
+
+    .form-image img {
+      width: 100%;
+    }
+
+    .step-section-2 {
+      display: flex;
+      width: 92%;
+      gap: 16px;
+      align-items: center;
+      border-radius: 6px;
+      border: 1px solid var(--Border-Dark-Brand, #1d4ed8);
+      background: var(--Background-Neutral-Disable, #fafafa);
+      padding: 16px;
+      margin-top: 40px;
+    }
+
+    .form2 {
+      min-width: 200px;
+      gap: 15px;
+    }
+
+    .second-form-sec h2 {
+      font-size: 25px;
+    }
+
+    .second-form-sec h4 {
+      font-size: 20px;
+    }
+
+    .second-form-sec p {
+      font-size: 20px;
+    }
+
+    .tab-image {
+      display: none;
+    }
+
+    .container-text p {
+      letter-spacing: 1.4px;
+      font-size: 19px;
+      width: 100%;
+    }
+
+    .banner-section-2 {
+      background-color: #1D4ED8;
+      position: relative;
+      height: 400px;
+      color: white;
+    }
+
+    .videocallbutton {
+      bottom: 0px;
+      left: 15%;
+    }
+
+    .width-container {
+      max-width: 1600px;
+      margin: auto;
+      display: flex;
+      /* align-items: center; */
+      padding: 10px;
+    }
+
+    .step-section p,
+    .step-section-2 p {
+      font-size: 17px;
+    }
+
+    .step-section-text h3 {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width:600px) {
+    .form-text-section {
+      text-align: center;
+    }
+
+    .heading {
+      color: #00b2ff;
+      font-family: "Roboto Condensed";
+      font-size: 40px;
+      font-style: italic;
+      font-weight: 900;
+      line-height: 94.518px;
+      letter-spacing: -1.755px;
+      text-transform: uppercase;
+      margin: 0px;
+    }
+
+    .form-section {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+    }
+
+    .body-main {
+      display: flex;
+
+      flex-direction: column;
+    }
+
+    .form {
+      gap: 10px;
+    }
+
+    .sample-img img {
+      width: 100%;
+    }
+
+    .text-section {
+      display: flex;
+      width: fit-content;
+      flex-direction: column;
+      /* padding-top: 70%; */
+    }
+
+    .qr img {
+      width: 100%;
+    }
+
+    .form-text-section h2 {
+      height: 135px;
+      margin: 0px;
+    }
+
+
+    .step-section-container {
+      flex-direction: column;
+    }
+
+    .meet-our-team-sec p {
+      font-size: 19px;
+      line-height: 40px;
+    }
+
+    .image-section {
+      padding-top: 30px;
+    }
+
+    .second-form-sec {
+      display: flex;
+      /* justify-content: space-between; */
+      align-items: center;
+      padding-top: 10%;
+      flex-direction: column;
+    }
+
+    .form-right {
+      width: 100%;
+    }
+
+    .review-container {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      overflow: scroll;
+    }
+
+    .review-container {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      overflow: scroll;
+    }
+
+    .avatar-section {
+      display: flex;
+      overflow: scroll;
+    }
+
+    .form-image img {
+      width: 100%;
+    }
+
+    .step-section-2 {
+      display: flex;
+      width: 92%;
+      gap: 16px;
+      align-items: center;
+      border-radius: 6px;
+      border: 1px solid var(--Border-Dark-Brand, #1d4ed8);
+      background: var(--Background-Neutral-Disable, #fafafa);
+      padding: 16px;
+      margin-top: 40px;
+    }
+
+    .form2 {
+      min-width: 200px;
+      gap: 15px;
+    }
+
+    .second-form-sec h2 {
+      font-size: 25px;
+    }
+
+    .second-form-sec h4 {
+      font-size: 20px;
+    }
+
+    .second-form-sec p {
+      font-size: 20px;
+    }
+
+    .tab-image {
+      display: none;
+    }
+
+    .container-text p {
+      letter-spacing: 1.4px;
+      font-size: 19px;
+      width: 100%;
+    }
+
+    .banner-section-2 {
+      background-color: #1D4ED8;
+      position: relative;
+      height: 400px;
+      color: white;
+    }
+
+    .videocallbutton {
+      bottom: 0px;
+      left: 15%;
+    }
+
+    .width-container {
+      max-width: 1600px;
+      margin: auto;
+      display: flex;
+      /* align-items: center; */
+      padding: 10px;
+    }
+
+    .step-section p,
+    .step-section-2 p {
+      font-size: 17px;
+    }
+
+    .step-section-text h3 {
+      font-size: 16px;
+    }
+  }
+</style>
+
+<body>
+  <div>
+    <div class="banner-section">
+      <div class="layer-section">
+        <div class="form-section">
+          <div class="form-text-section">
+            <h1 class="heading">#1 KENTUCKY'S</h1>
+            <h4 class="head2">KITCHEN REMODELERS</h4>
+            <p class="paragraph">Get Your Kitchen Remodeled In a Day</p>
+            <h2>
+              <span class="zero">0</span><span class="percentage">% Down </span><span class="zero">0</span><span
+                class="percentage"> % APR</span>
+            </h2>
+            <p class="pay-just">
+              Pay Just $355/Month for 60 Months and Finance your Project
+            </p>
+            <div class="qr">
+              <img src="https://cdn.shopify.com/s/files/1/0064/6515/9257/files/Frame_427318932.png?v=1734639155"
+                alt="QR" />
+            </div>
+          </div>
+          <div>
+            <form class="form">
+              <h2>Get professional kitchen design services at no cost</h2>
+              <div class="input">
+                <svg width="30" height="30" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="Icon list">
+                    <g id="Vector">
+                      <path
+                        d="M10.9719 4.47168C10.9719 5.85239 9.85261 6.97168 8.4719 6.97168C7.09119 6.97168 5.9719 5.85239 5.9719 4.47168C5.9719 3.09097 7.09119 1.97168 8.4719 1.97168C9.85261 1.97168 10.9719 3.09097 10.9719 4.47168Z"
+                        stroke="#404040" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M3.47266 13.8838C3.51953 11.1629 5.73981 8.97168 8.4719 8.97168C11.2041 8.97168 13.4244 11.163 13.4711 13.884C11.9493 14.5824 10.2562 14.9717 8.47211 14.9717C6.6879 14.9717 4.99463 14.5823 3.47266 13.8838Z"
+                        stroke="#404040" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                  </g>
+                </svg>
+                <input type="text" placeholder="Name" />
+              </div>
+              <div class="input">
+                <svg width="30" height="30" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="Icon list">
+                    <path id="Vector"
+                      d="M14.9717 5.27356V12.2736C14.9717 13.102 14.3001 13.7736 13.4717 13.7736H3.47168C2.64325 13.7736 1.97168 13.102 1.97168 12.2736V5.27356M14.9717 5.27356C14.9717 4.44513 14.3001 3.77356 13.4717 3.77356H3.47168C2.64325 3.77356 1.97168 4.44513 1.97168 5.27356M14.9717 5.27356V5.43537C14.9717 5.95626 14.7014 6.43986 14.2578 6.71285L9.25783 9.78978C8.77572 10.0865 8.16764 10.0865 7.68553 9.78978L2.68553 6.71285C2.24191 6.43986 1.97168 5.95626 1.97168 5.43537V5.27356"
+                      stroke="#404040" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </g>
+                </svg>
+                <input type="email" placeholder="Enter Your email" />
+              </div>
+              <div class="input">
+                <svg width="30" height="30" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="Icon list" clip-path="url(#clip0_111_129)">
+                    <path id="Vector"
+                      d="M1.97168 4.57544C1.97168 10.0983 6.44883 14.5754 11.9717 14.5754H13.4717C14.3001 14.5754 14.9717 13.9039 14.9717 13.0754V12.161C14.9717 11.8169 14.7375 11.5169 14.4036 11.4334L11.4548 10.6962C11.162 10.623 10.8539 10.7324 10.6729 10.9738L10.0261 11.8362C9.83836 12.0865 9.51369 12.1972 9.21991 12.0896C7.01528 11.282 5.26512 9.53184 4.45752 7.32721C4.34991 7.03343 4.46059 6.70876 4.71088 6.52104L5.57329 5.87423C5.8147 5.69317 5.92409 5.38508 5.8509 5.09233L5.1137 2.14354C5.03024 1.80966 4.73025 1.57544 4.3861 1.57544H3.47168C2.64325 1.57544 1.97168 2.24701 1.97168 3.07544V4.57544Z"
+                      stroke="#404040" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_111_129">
+                      <rect width="16" height="16" fill="white" transform="translate(0.47168 0.0754395)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <input type="number" placeholder="Phone number" />
+              </div>
+              <p>When are you planning your project ?</p>
+              <div class="radio-btn-section">
+                <div>
+                  <input type="radio" id="Immedately" name="radio" />
+                  <label for="Immedately">Immedately</label>
+                </div>
+                <div>
+                  <input type="radio" id="Month" name="radio" />
+                  <label for="Month">3-6 Months</label>
+                </div>
+                <div>
+                  <input type="radio" id="halfyear" name="radio" />
+                  <label for="halfyear">6+ Months</label>
+                </div>
+              </div>
+              <button class="submit-btn">Get Started</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="body-section">
+      <div class="body-main">
+        <div class="text-section">
+          <h2>Build your dream home today with BuildMyPlace.</h2>
+          <h4>Flexible financing starts at just $355/month for 60 months.</h4>
+          <p>
+            Give your kitchen a modern touch with a 12x12 kitchen remodel for
+            just $355/month for 60 months. Enjoy 0% down and 0% APR special
+            financing for 60 months on select packages.
+            <spann class="call-number">Call ( 502-325-0000 )</spann>
+            for details about credit costs and terms. Subject to credit
+            approval. The offer expires on <span class="date">3/31/25</span> .
+            Don’t miss this chance to upgrade your home effortlessly!
+          </p>
+          <div>
+            <button class="contact-btn">Contact Us</button>
+          </div>
+        </div>
+        <div class="image-section">
+          <div class="sample-img">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0064/6515/9257/files/Rectangle_e7fc0ecd-36a3-488a-be06-4655fece93a8.png?v=1734644274"
+              alt="befor-image" />
+          </div>
+          <div class="sample-img">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0064/6515/9257/files/Rectangle_1_ef59d464-5c0e-4963-aebb-47558ed6c706.png?v=1734644272"
+              alt="after-image" />
+          </div>
+        </div>
+      </div>
+      <div class="our-process-sec">
+        <h2>Our Process</h2>
+        <p>Discover how we transform your ideas into reality</p>
+        <div>
+          <div class="step-section-container">
+            <div class="step-section">
+              <div>
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0064/6515/9257/files/image_1_0b081b90-4dcb-441a-bd7a-f21ecf128836.png?v=1734702372"
+                  alt="image" />
+              </div>
+              <div class="step-section-text">
+                <h3>Provide Your Measurements</h3>
+                <p>
+                  It’s very easy to get started! Start by submitting your
+                  kitchen measurements through this form, or email us at
+                  info@buildmyplace.com
+                </p>
+              </div>
+            </div>
+            <div class="step-section">
+              <div>
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0064/6515/9257/files/image_2_e7168ac0-5eab-4bce-bf65-9c3041f3f1cd.png?v=1734702372"
+                  alt="image" />
+              </div>
+              <div class="step-section-text">
+                <h3>Provide Your Measurements</h3>
+                <p>
+                  It’s very easy to get started! Start by submitting your
+                  kitchen measurements through this form, or email us at
+                  info@buildmyplace.com
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="step-section-2">
+            <div>
+              <img
+                src="https://cdn.shopify.com/s/files/1/0064/6515/9257/files/image_3_a85dc1f1-e5de-4e61-a674-c0e5bf72f951.png?v=1734702372"
+                alt="image" />
+            </div>
+            <div class="step-section-text">
+              <h3>Provide Your Measurements</h3>
+              <p>
+                It’s very easy to get started! Start by submitting your
+                kitchen measurements through this form, or email us at
+                info@buildmyplace.com
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="meet-our-team-sec">
+        <h2>Meet our Amazing Team</h2>
+        <p>
+          Get to know our dedicated team at BMP, located at 2900 Fern Valley
+          Road in Louisville, KY. Each of our managers brings expertise,
+          commitment, and a personal approach to making your experience
+          exceptional. Reach out directly via email or phone—we’re here to
+          help you complete your dream space!
+        </p>
+        <div class="avatar-section">
+          <div>
+            <div class="avatar">
+              <img src="https://cdn.shopify.com/s/files/1/0064/6515/9257/files/Ellipse_102.png?v=1734705296"
+                alt="avatar" />
+            </div>
+            <h4>Jacob O’Berry</h4>
+            <p>General Manager</p>
+          </div>
+          <div>
+            <div class="avatar">
+              <img src="https://cdn.shopify.com/s/files/1/0064/6515/9257/files/Ellipse_102_1.png?v=1734705296"
+                alt="avatar" />
+            </div>
+            <h4>Jacob O’Berry</h4>
+            <p>General Manager</p>
+          </div>
+          <div>
+            <div class="avatar">
+              <img src="https://cdn.shopify.com/s/files/1/0064/6515/9257/files/Ellipse_102_2.png?v=1734705297"
+                alt="avatar" />
+            </div>
+            <h4>Jacob O’Berry</h4>
+            <p>General Manager</p>
+          </div>
+          <div>
+            <div class="avatar">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0064/6515/9257/files/Rectangle_3_88b8eed6-d63d-4d22-b1cb-b7cfff6373e5.png?v=1734705296"
+                alt="avatar" />
+            </div>
+            <h4>Jacob O’Berry</h4>
+            <p>General Manager</p>
+          </div>
+          <div>
+            <div class="avatar">
+              <img src="https://cdn.shopify.com/s/files/1/0064/6515/9257/files/Frame_427318941.png?v=1734705296"
+                alt="avatar" />
+            </div>
+            <h4>Jacob O’Berry</h4>
+            <p>General Manager</p>
+          </div>
+        </div>
+      </div>
+      <div class="review-sec meet-our-team-sec">
+        <h2>Client Testimonials</h2>
+        <p>Read What our Clients say about our services</p>
+        <div class="review-container">
+          <div class="review-card">
+            <div>
+              <img src="https://cdn.shopify.com/s/files/1/0064/6515/9257/files/2022-09-13_1.png?v=1734707508"
+                alt="review-image" />
+            </div>
+            <div class="review-name">
+              <div class="avatar-name">
+                <img src="https://cdn.shopify.com/s/files/1/0064/6515/9257/files/avatar.png?v=1734707509"
+                  alt="review-image" />
+              </div>
+              <p>Emily s.</p>
+              <div class="review-stars">
+                <img src="https://cdn.shopify.com/s/files/1/0064/6515/9257/files/Frame_427318817.png?v=1734707509"
+                  alt="review-image" />
+              </div>
+            </div>
+            <h4>Amazing service, highly recommended</h4>
+          </div>
+          <div class="review-card">
+            <div>
+              <img src="https://cdn.shopify.com/s/files/1/0064/6515/9257/files/2022-09-13_1_1.png?v=1734708878"
+                alt="review-image" />
+            </div>
+            <div class="review-name">
+              <div class="avatar-name">
+                <img src="https://cdn.shopify.com/s/files/1/0064/6515/9257/files/avatar_1.png?v=1734708877"
+                  alt="review-image" />
+              </div>
+              <p>Mike T.</p>
+              <div class="review-stars">
+                <img src="https://cdn.shopify.com/s/files/1/0064/6515/9257/files/Frame_427318817.png?v=1734707509"
+                  alt="review-image" />
+              </div>
+            </div>
+            <h4>Amazing service, highly recommended</h4>
+          </div>
+          <div class="review-card">
+            <div>
+              <img src="https://cdn.shopify.com/s/files/1/0064/6515/9257/files/2022-09-13_1_2.png?v=1734708878"
+                alt="review-image" />
+            </div>
+            <div class="review-name">
+              <div class="avatar-name">
+                <img src="https://cdn.shopify.com/s/files/1/0064/6515/9257/files/avatar_2.png?v=1734708877"
+                  alt="review-image" />
+              </div>
+              <p>Sarah L.</p>
+              <div class="review-stars">
+                <img src="https://cdn.shopify.com/s/files/1/0064/6515/9257/files/Frame_427318817.png?v=1734707509"
+                  alt="review-image" />
+              </div>
+            </div>
+            <h4>Amazing service, highly recommended</h4>
+          </div>
+        </div>
+      </div>
+      <div class="second-form-sec">
+        <div class="form-right">
+          <div class="form-image">
+            <img
+              src=" https://cdn.shopify.com/s/files/1/0064/6515/9257/files/image_4_4d680dfc-ed46-446c-81d6-cab9c9f99efa.png?v=1734709490"
+              alt="bmp-img" />
+          </div>
+          <h2>Visit Us</h2>
+          <p>
+            Explore our massive 300,000 square ft. Showroom, equipped with all
+            your dream renovation products.
+          </p>
+          <h4>
+            <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="location_on">
+                  <mask id="mask0_62_203" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24"
+                    height="24">
+                    <rect id="Bounding box" width="24" height="24" fill="#D9D9D9" />
+                  </mask>
+                  <g mask="url(#mask0_62_203)">
+                    <path id="location_on_2"
+                      d="M12 12C12.55 12 13.0208 11.8042 13.4125 11.4125C13.8042 11.0208 14 10.55 14 10C14 9.45 13.8042 8.97917 13.4125 8.5875C13.0208 8.19583 12.55 8 12 8C11.45 8 10.9792 8.19583 10.5875 8.5875C10.1958 8.97917 10 9.45 10 10C10 10.55 10.1958 11.0208 10.5875 11.4125C10.9792 11.8042 11.45 12 12 12ZM12 19.35C14.0333 17.4833 15.5417 15.7875 16.525 14.2625C17.5083 12.7375 18 11.3833 18 10.2C18 8.38333 17.4208 6.89583 16.2625 5.7375C15.1042 4.57917 13.6833 4 12 4C10.3167 4 8.89583 4.57917 7.7375 5.7375C6.57917 6.89583 6 8.38333 6 10.2C6 11.3833 6.49167 12.7375 7.475 14.2625C8.45833 15.7875 9.96667 17.4833 12 19.35ZM12 22C9.31667 19.7167 7.3125 17.5958 5.9875 15.6375C4.6625 13.6792 4 11.8667 4 10.2C4 7.7 4.80417 5.70833 6.4125 4.225C8.02083 2.74167 9.88333 2 12 2C14.1167 2 15.9792 2.74167 17.5875 4.225C19.1958 5.70833 20 7.7 20 10.2C20 11.8667 19.3375 13.6792 18.0125 15.6375C16.6875 17.5958 14.6833 19.7167 12 22Z"
+                      fill="#1C1B1F" />
+                  </g>
+                </g>
+              </svg>
+            </span>
+            2900 Fern Valley Road  Louisville Ky
+          </h4>
+        </div>
+        <div>
+          <form class="form2">
+            <h2>Request a Consultation</h2>
+            <p>Fill in your details to schedule a design consultation</p>
+            <div class="input">
+              <svg width="30" height="30" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="Icon list">
+                  <g id="Vector">
+                    <path
+                      d="M10.9719 4.47168C10.9719 5.85239 9.85261 6.97168 8.4719 6.97168C7.09119 6.97168 5.9719 5.85239 5.9719 4.47168C5.9719 3.09097 7.09119 1.97168 8.4719 1.97168C9.85261 1.97168 10.9719 3.09097 10.9719 4.47168Z"
+                      stroke="#404040" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M3.47266 13.8838C3.51953 11.1629 5.73981 8.97168 8.4719 8.97168C11.2041 8.97168 13.4244 11.163 13.4711 13.884C11.9493 14.5824 10.2562 14.9717 8.47211 14.9717C6.6879 14.9717 4.99463 14.5823 3.47266 13.8838Z"
+                      stroke="#404040" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </g>
+                </g>
+              </svg>
+              <input type="text" placeholder="Name" />
+            </div>
+            <div class="input">
+              <svg width="30" height="30" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="Icon list">
+                  <path id="Vector"
+                    d="M14.9717 5.27356V12.2736C14.9717 13.102 14.3001 13.7736 13.4717 13.7736H3.47168C2.64325 13.7736 1.97168 13.102 1.97168 12.2736V5.27356M14.9717 5.27356C14.9717 4.44513 14.3001 3.77356 13.4717 3.77356H3.47168C2.64325 3.77356 1.97168 4.44513 1.97168 5.27356M14.9717 5.27356V5.43537C14.9717 5.95626 14.7014 6.43986 14.2578 6.71285L9.25783 9.78978C8.77572 10.0865 8.16764 10.0865 7.68553 9.78978L2.68553 6.71285C2.24191 6.43986 1.97168 5.95626 1.97168 5.43537V5.27356"
+                    stroke="#404040" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+              </svg>
+              <input type="email" placeholder="Enter Your email" />
+            </div>
+            <div class="input">
+              <svg width="30" height="30" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="Icon list" clip-path="url(#clip0_111_129)">
+                  <path id="Vector"
+                    d="M1.97168 4.57544C1.97168 10.0983 6.44883 14.5754 11.9717 14.5754H13.4717C14.3001 14.5754 14.9717 13.9039 14.9717 13.0754V12.161C14.9717 11.8169 14.7375 11.5169 14.4036 11.4334L11.4548 10.6962C11.162 10.623 10.8539 10.7324 10.6729 10.9738L10.0261 11.8362C9.83836 12.0865 9.51369 12.1972 9.21991 12.0896C7.01528 11.282 5.26512 9.53184 4.45752 7.32721C4.34991 7.03343 4.46059 6.70876 4.71088 6.52104L5.57329 5.87423C5.8147 5.69317 5.92409 5.38508 5.8509 5.09233L5.1137 2.14354C5.03024 1.80966 4.73025 1.57544 4.3861 1.57544H3.47168C2.64325 1.57544 1.97168 2.24701 1.97168 3.07544V4.57544Z"
+                    stroke="#404040" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_111_129">
+                    <rect width="16" height="16" fill="white" transform="translate(0.47168 0.0754395)" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <input type="number" placeholder="Phone number" />
+            </div>
+            <button class="submit-btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="banner-section-2">
+      <div class=" width-container banner-section-2">
+        <div class="container-text">
+          <p>Bringing the Showroom to you with</p>
+          <h2>Live Product Demo</h2>
+          <p>With just a click, connect live with our executives right from the store in Louisville, Kentucky and enjoy
+            an interactive, informative, and personalized home-improvement journey</p>
+        </div>
+        <button class="videocallbutton"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="19"
+            viewBox="0 0 23 19" fill="none">
+            <path
+              d="M4.5 13.9199H13.5V13.3012C13.5 12.4762 13.0875 11.8105 12.2625 11.3043C11.4375 10.798 10.35 10.5449 9 10.5449C7.65 10.5449 6.5625 10.798 5.7375 11.3043C4.9125 11.8105 4.5 12.4762 4.5 13.3012V13.9199ZM9 9.41992C9.61875 9.41992 10.1484 9.19961 10.5891 8.75898C11.0297 8.31836 11.25 7.78867 11.25 7.16992C11.25 6.55117 11.0297 6.02148 10.5891 5.58086C10.1484 5.14023 9.61875 4.91992 9 4.91992C8.38125 4.91992 7.85156 5.14023 7.41094 5.58086C6.97031 6.02148 6.75 6.55117 6.75 7.16992C6.75 7.78867 6.97031 8.31836 7.41094 8.75898C7.85156 9.19961 8.38125 9.41992 9 9.41992ZM2.25 18.4199C1.63125 18.4199 1.10156 18.1996 0.660938 17.759C0.220312 17.3184 0 16.7887 0 16.1699V2.66992C0 2.05117 0.220312 1.52148 0.660938 1.08086C1.10156 0.640234 1.63125 0.419922 2.25 0.419922H15.75C16.3687 0.419922 16.8984 0.640234 17.3391 1.08086C17.7797 1.52148 18 2.05117 18 2.66992V7.73242L21.2197 4.51275C21.6921 4.04028 22.5 4.3749 22.5 5.04308V13.7968C22.5 14.4649 21.6921 14.7996 21.2197 14.3271L18 11.1074V16.1699C18 16.7887 17.7797 17.3184 17.3391 17.759C16.8984 18.1996 16.3687 18.4199 15.75 18.4199H2.25ZM1.5 16.1699C1.5 16.5841 1.83579 16.9199 2.25 16.9199H15.75C16.1642 16.9199 16.5 16.5841 16.5 16.1699V2.66992C16.5 2.25571 16.1642 1.91992 15.75 1.91992H2.25C1.83579 1.91992 1.5 2.25571 1.5 2.66992V16.1699Z"
+              fill="white" />
+          </svg> Live Video call</button>
+        <div class="tab-image">
+          <img src="https://cdn.shopify.com/s/files/1/0064/6515/9257/files/video_1.png?v=1734711959" alt="tab-image" />
+        </div>
+      </div>
+    </div>
+    <div class="map-section">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2506.132728871228!2d-85.71082!3d38.1564325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88690d4c2d39f4bf%3A0x7f45de2192c0580a!2sBuildMyPlace!5e0!3m2!1sen!2sus!4v1690000000000!5m2!1sen!2sus"
+        width="1600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+  </div>
+  </div>
+</body>
+
+</html>
